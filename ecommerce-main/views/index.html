@@ -8,17 +8,19 @@
 </head>
 
 <header>
-    <h1>Bienvenue sur la boutique en ligne</h1>
+    <a href="#"><img src="../public/images/logo_transparent.png" class="logo" ></a>
+    <h1>Bienvenue sur AGRICAM MARKET </h1>
+   
     <nav>
         <ul id="nav-list">
             <div class="nav-left">
                 <li id="username-display"></li>
             </div>
             <div class="nav-right">
-                <li id="sign-in-button"><a href="/sign-in">Inscription</a></li>
-                <li id="open-login-popup"><a href="#">Connexion</a></li>
+                <li id="sign-in-button"><a href="/views/sign-in.html">Inscription</a></li>
+                <li id="open-login-popup"><a href="/views/login.html">Connexion</a></li>
                 <li id="logout-button" style="display: none;"><a href="#" onclick="logout()">Déconnexion</a></li>
-                <li id="merchant-dashboard-button" style="display: none;"><a href="/dashboard">Dashboard</a></li>
+                <li id="merchant-dashboard-button" style="display: none;"><a href="../views/dashboard.html">Dashboard</a></li>
             </div>
         </ul>
     </nav>
@@ -73,6 +75,8 @@
                 <!-- Contenu des produits -->
                 <div id="featured-product-1" class="featured-product">
                     <!-- Contenu du produit 1 -->
+                     <img src="/public/images/beaume-de-venise-terrissimo.jpg">
+                     <img src="/public/images/beaume-de-venise-terrissimo.jpg">
                 </div>
                 <div id="featured-product-2" class="featured-product">
                     <!-- Contenu du produit 2 -->
@@ -121,14 +125,15 @@
     </main>
     
     <footer>
-        <p>&copy; 2024 Site Commerçant. Tous droits réservés.</p>
+        <p>&copy; 2025 Site Commerçant. Tous droits réservés.</p>
     </footer>
 
+
     <!-- Charger les scripts JavaScript -->
-    <script src="/js/panier.js"></script>
-    <script src="/js/add-to-cart.js" type="module"></script>
-    <script src="/js/products.js" type="module"></script>
-    <script src="/js/login.js"></script>
+    <script src="../public/js/panier.js"></script>
+    <script src="../public/js/add-to-cart.js" type="module"></script>
+    <script src="../public/js/products.js" type="module"></script>
+    <script src="../public/js/login.js"></script>
     <script>
         // Vérifier si un token est présent dans le localStorage
         document.addEventListener('DOMContentLoaded', function() {
@@ -192,7 +197,6 @@
 
 
     </script>
-    <script src="/js/header.js"></script>
-
+    <script src="../public/js/header.js"></script>
 </body>
 </html>

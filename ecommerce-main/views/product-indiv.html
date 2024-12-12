@@ -4,21 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Détails du Produit - Site Commerçant</title>
-        <link rel="stylesheet" href="public/css/styles.css">
+        <link rel="stylesheet" href="../public/css/styles.css">
     </head>
     <body>
         <header>
+            <a href="#"><img src="../public/images/logo_transparent.png" class="logo" ></a>
             <h1>Détails du produit</h1>
+           
             <nav>
                 <ul id="nav-list">
                     <div class="nav-left">
                         <li id="username-display"></li>
                     </div>
                     <div class="nav-right">
-                        <li id="sign-in-button"><a href="/sign-in">Inscription</a></li>
-                        <li id="open-login-popup"><a href="#">Connexion</a></li>
+                        <li id="sign-in-button"><a href="/views/sign-in.html">Inscription</a></li>
+                        <li id="open-login-popup"><a href="/views/login.html">Connexion</a></li>
                         <li id="logout-button" style="display: none;"><a href="#" onclick="logout()">Déconnexion</a></li>
-                        <li id="merchant-dashboard-button" style="display: none;"><a href="/dashboard">Dashboard</a></li>
+                        <li id="merchant-dashboard-button" style="display: none;"><a href="../views/dashboard.html">Dashboard</a></li>
                     </div>
                 </ul>
             </nav>
@@ -55,7 +57,7 @@
                     <ul id="cart-items">
                         <!-- Les articles du panier seront générés ici -->
                     </ul>
-                    <p id="cart-total">Total: €0.00</p>
+                    <p id="cart-total">Total: 0.00 FCFA</p>
                     <button id="clear-cart-btn">Vider le panier</button>
                     <button id="order-btn">Commander</button>
                 </section>
@@ -65,7 +67,7 @@
                     <!-- Conteneur de l'image du produit et des infos -->
                     <div class="product-content">
                         <div class="product-image-container">
-                            <img src="" alt="" id="product-image">
+                            <img src="/public/images/beaume-de-venise-terrissimo.jpg" alt="" id="product-image">
                             <!-- Optionnel : ajouter un champ de téléchargement d'image si l'utilisateur est marchand -->
                             <input type="file" id="image-upload" accept="image/*" style="display: block; margin-top: 10px;">
                         </div>
@@ -88,10 +90,10 @@
         });
     </script>
     <!-- Charger les scripts JavaScript -->
-    <script src="/js/add-to-cart.js" type="module"></script>
-    <script src="/js/product-indiv.js" type="module"></script>
-    <script src="/js/panier.js"></script>
-    <script src="/js/login.js"></script>
-    <script src="/js/header.js"></script>
+    <script src="../public/js/add-to-cart.js" type="module"></script>
+    <script src="../public/js/product-indiv.js" type="module"></script>
+    <script src="../public/js/panier.js"></script>
+    <script src="../public/js/login.js"></script>
+    <script src="../public/js/header.js"></script>
 </body>
 </html>
